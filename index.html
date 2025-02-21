@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Auto Rentals</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#fleet">Fleet Options</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Elite Auto Rentals</h1>
+    <p>Drive the car of your dreams today. Hassle-free bookings, premium service.</p>
+    <button onclick="window.location.href='#fleet'">Book Now</button>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About Elite Auto Rentals</h2>
+    <p>
+      At Elite Auto Rentals, we pride ourselves on providing top-quality vehicles and exceptional service.
+      Whether you're traveling for business or leisure, our fleet of cars is tailored to suit every need.
+    </p>
+  </section>
+
+  <!-- Fleet Options Section -->
+  <section id="fleet">
+    <h2>Our Fleet</h2>
+    <div class="fleet-card">
+      <img src="economy.jpg" alt="Economy Car">
+      <h3>Economy Cars</h3>
+      <p>Affordable and fuel-efficient vehicles for everyday use.</p>
+    </div>
+    <div class="fleet-card">
+      <img src="suv.jpg" alt="SUV">
+      <h3>SUVs</h3>
+      <p>Spacious and versatile, perfect for family trips and off-road adventures.</p>
+    </div>
+    <div class="fleet-card">
+      <img src="luxury.jpg" alt="Luxury Car">
+      <h3>Luxury Cars</h3>
+      <p>Experience luxury and performance with our premium selection.</p>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing">
+    <h2>Pricing & Offers</h2>
+    <p>Explore our competitive daily, weekly, and monthly rates. Special discounts for long-term rentals.</p>
+    <ul>
+      <li>Economy Cars: Starting at $29/day</li>
+      <li>SUVs: Starting at $49/day</li>
+      <li>Luxury Cars: Starting at $89/day</li>
+    </ul>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions? Reach out to us or book your vehicle today!</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Elite Auto Rentals. All rights reserved.</p>
+  </footer>
+</body>
+</html>

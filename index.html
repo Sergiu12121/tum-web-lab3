@@ -23,13 +23,15 @@
 
   <!-- Hero Section -->
   <section id="hero">
-    <h1>Elite Auto Rentals</h1>
-    <p>Drive the car of your dreams today. Hassle-free bookings, premium service.</p>
-    <button onclick="window.location.href='#fleet'">
-      <span class="transition"></span>
-      <span class="gradient"></span>
-      <span class="label">Book Now</span>
-    </button>
+    <div class="container">
+      <h1>Elite Auto Rentals</h1>
+      <p>Drive the car of your dreams today. Hassle-free bookings, premium service.</p>
+      <button onclick="window.location.href='#fleet'">
+        <span class="transition"></span>
+        <span class="gradient"></span>
+        <span class="label">Book Now</span>
+      </button>
+    </div>
   </section>
 
   <!-- Mobile-Only Call to Action -->
@@ -39,80 +41,90 @@
 
   <!-- About Us Section -->
   <section id="about">
-    <h2>About Elite Auto Rentals</h2>
-    <p>
-      At Elite Auto Rentals, we pride ourselves on providing top-quality vehicles and exceptional service.
-      Whether you're traveling for business or leisure, our fleet of cars is tailored to suit every need.
-    </p>
+    <div class="container">
+      <h2>About Elite Auto Rentals</h2>
+      <p>
+        At Elite Auto Rentals, we pride ourselves on providing top-quality vehicles and exceptional service.
+        Whether you're traveling for business or leisure, our fleet of cars is tailored to suit every need.
+      </p>
+    </div>
   </section>
 
   <!-- Fleet Options Section -->
   <section id="fleet">
-    <h2>Our Fleet</h2>
-    <div class="fleet-card">
-      <img src="economy.jpg" alt="Economy Car">
-      <h3>Economy Cars</h3>
-      <p>Affordable and fuel-efficient vehicles for everyday use.</p>
-    </div>
-    <div class="fleet-card">
-      <img src="suv.jpg" alt="SUV">
-      <h3>SUVs</h3>
-      <p>Spacious and versatile, perfect for family trips and off-road adventures.</p>
-    </div>
-    <div class="fleet-card">
-      <img src="luxury.jpg" alt="Luxury Car">
-      <h3>Luxury Cars</h3>
-      <p>Experience luxury and performance with our premium selection.</p>
+    <div class="container">
+      <h2>Our Fleet</h2>
+      <div class="fleet-card">
+        <img src="economy.jpg" alt="Economy Car">
+        <h3>Economy Cars</h3>
+        <p>Affordable and fuel-efficient vehicles for everyday use.</p>
+      </div>
+      <div class="fleet-card">
+        <img src="suv.jpg" alt="SUV">
+        <h3>SUVs</h3>
+        <p>Spacious and versatile, perfect for family trips and off-road adventures.</p>
+      </div>
+      <div class="fleet-card">
+        <img src="luxury.jpg" alt="Luxury Car">
+        <h3>Luxury Cars</h3>
+        <p>Experience luxury and performance with our premium selection.</p>
+      </div>
     </div>
   </section>
 
   <!-- Mobile-Only Section -->
   <section id="mobile-exclusive" class="mobile-only">
-    <h2>Mobile Exclusive Offer</h2>
-    <p>Get a free upgrade when you book via your mobile device!</p>
-    <img src="mobile-offer.png" alt="Mobile Exclusive Offer">
+    <div class="container">
+      <h2>Mobile Exclusive Offer</h2>
+      <p>Get a free upgrade when you book via your mobile device!</p>
+      <img src="mobile-offer.png" alt="Mobile Exclusive Offer">
+    </div>
   </section>
 
   <!-- Pricing Section -->
   <section id="pricing">
-    <h2>Pricing & Offers</h2>
-    <p>Explore our competitive daily, weekly, and monthly rates. Special discounts for long-term rentals.</p>
-    <ul>
-      <li>Economy Cars: Starting at $29/day</li>
-      <li>SUVs: Starting at $49/day</li>
-      <li>Luxury Cars: Starting at $89/day</li>
-    </ul>
+    <div class="container">
+      <h2>Pricing & Offers</h2>
+      <p>Explore our competitive daily, weekly, and monthly rates. Special discounts for long-term rentals.</p>
+      <ul>
+        <li>Economy Cars: Starting at $29/day</li>
+        <li>SUVs: Starting at $49/day</li>
+        <li>Luxury Cars: Starting at $89/day</li>
+      </ul>
+    </div>
   </section>
 
   <!-- Contact Us Section -->
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <p>Have questions or need assistance? Get in touch:</p>
-    <p>Email: book@eliteautorentals.com</p>
-    <p>Phone: 022 22 22 22</p>
-    <p>Ready to hit the road? Reserve your car today and experience a seamless booking process.</p>
-    <!-- Booking Form -->
-    <form action="/submit-booking" method="POST">
-      <div class="coolinput">
-        <label for="name" class="text">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" class="input">
-      </div>
-      <div class="coolinput">
-        <label for="email" class="text">Email:</label>
-        <input type="text" id="email" name="email" placeholder="Enter your email" class="input">
-      </div>
-      <div class="coolinput">
-        <label for="car-type" class="text">Car Type:</label>
-        <input type="text" id="car-type" name="car-type" placeholder="Specify car type" class="input">
-      </div>
-      <button type="submit" class="button">
-        <span class="button-decor"></span>
-        <span class="button-content">
-          <span class="button__icon">✅</span>
-          <span class="button__text">Submit Booking</span>
-        </span>
-      </button>
-    </form>
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions or need assistance? Get in touch:</p>
+      <p>Email: book@eliteautorentals.com</p>
+      <p>Phone: 022 22 22 22</p>
+      <p>Ready to hit the road? Reserve your car today and experience a seamless booking process.</p>
+      <!-- Booking Form -->
+      <form action="/submit-booking" method="POST">
+        <div class="coolinput">
+          <label for="name" class="text">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" class="input">
+        </div>
+        <div class="coolinput">
+          <label for="email" class="text">Email:</label>
+          <input type="text" id="email" name="email" placeholder="Enter your email" class="input">
+        </div>
+        <div class="coolinput">
+          <label for="car-type" class="text">Car Type:</label>
+          <input type="text" id="car-type" name="car-type" placeholder="Specify car type" class="input">
+        </div>
+        <button type="submit" class="button">
+          <span class="button-decor"></span>
+          <span class="button-content">
+            <span class="button__icon">✅</span>
+            <span class="button__text">Submit Booking</span>
+          </span>
+        </button>
+      </form>
+    </div>
   </section>
 
   <!-- Mascot: Friendly Auto Assistant -->
@@ -123,7 +135,9 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Elite Auto Rentals. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Elite Auto Rentals. All rights reserved.</p>
+    </div>
   </footer>
 
   <!-- JavaScript for Delayed Mascot Appearance -->

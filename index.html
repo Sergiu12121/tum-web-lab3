@@ -32,7 +32,7 @@
     </button>
   </section>
 
-  <!-- Mobile-Only Call to Action (visible only on mobile) -->
+  <!-- Mobile-Only Call to Action -->
   <div id="mobile-cta" class="mobile-only">
     <button onclick="window.location.href='#fleet'">Book Now</button>
   </div>
@@ -70,7 +70,7 @@
   <section id="mobile-exclusive" class="mobile-only">
     <h2>Mobile Exclusive Offer</h2>
     <p>Get a free upgrade when you book via your mobile device!</p>
-    <img src="mobile-offer.jpg" alt="Mobile Exclusive Offer">
+    <img src="mobile-offer.png" alt="Mobile Exclusive Offer">
   </section>
 
   <!-- Pricing Section -->
@@ -115,9 +115,23 @@
     </form>
   </section>
 
+  <!-- Mascot: Friendly Auto Assistant -->
+  <div id="mascot" class="mascot">
+    <img src="mascot.png" alt="Friendly Auto Mascot">
+    <div class="mascot-message">Hi there! Need help booking your ride?</div>
+  </div>
+
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Elite Auto Rentals. All rights reserved.</p>
   </footer>
+
+  <!-- JavaScript for Delayed Mascot Appearance -->
+  <script>
+    // Show the mascot after a 3-second delay
+    setTimeout(function() {
+      document.getElementById('mascot').style.display = 'block';
+    }, 3000);
+  </script>
 </body>
 </html>

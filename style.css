@@ -313,3 +313,48 @@ button:active {
     display: none;
   }
 }
+
+/* Mascot Styling */
+#mascot {
+  display: none; /* Will appear after a delay via JS */
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 100px;
+  z-index: 1001;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+#mascot img {
+  width: 100%;
+  height: auto;
+}
+
+/* Mascot Message (tooltip) */
+.mascot-message {
+  position: absolute;
+  bottom: 110%;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  font-size: 0.8em;
+}
+
+#mascot:hover .mascot-message {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Mascot Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}

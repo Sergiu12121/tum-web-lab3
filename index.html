@@ -32,6 +32,11 @@
     </button>
   </section>
 
+  <!-- Mobile-Only Call to Action (visible only on mobile) -->
+  <div id="mobile-cta" class="mobile-only">
+    <button onclick="window.location.href='#fleet'">Book Now</button>
+  </div>
+
   <!-- About Us Section -->
   <section id="about">
     <h2>About Elite Auto Rentals</h2>
@@ -61,6 +66,13 @@
     </div>
   </section>
 
+  <!-- Mobile-Only Section -->
+  <section id="mobile-exclusive" class="mobile-only">
+    <h2>Mobile Exclusive Offer</h2>
+    <p>Get a free upgrade when you book via your mobile device!</p>
+    <img src="mobile-offer.jpg" alt="Mobile Exclusive Offer">
+  </section>
+
   <!-- Pricing Section -->
   <section id="pricing">
     <h2>Pricing & Offers</h2>
@@ -78,7 +90,6 @@
     <p>Have questions or need assistance? Get in touch:</p>
     <p>Email: book@eliteautorentals.com</p>
     <p>Phone: 022 22 22 22</p>
-
     <p>Ready to hit the road? Reserve your car today and experience a seamless booking process.</p>
     <!-- Booking Form -->
     <form action="/submit-booking" method="POST">

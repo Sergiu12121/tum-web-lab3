@@ -61,53 +61,52 @@
   </section>
 
   <!-- Mobile-Only Section #2 -->
-  <section id="mobile-exclusive" class="mobile-only">
-    <div class="container">
-      <h2>Mobile Exclusive Offer</h2>
-      <p>Get a free upgrade when you book via your mobile device!</p>
-      <img src="mobile-offer.png" alt="Mobile Exclusive Offer">
-    </div>
+  <section id="mobile-exclusive" class="container mx-auto py-12 bg-white rounded-lg shadow-md text-center block md:hidden">
+    <h2 class="text-3xl font-bold mb-4">Mobile Exclusive Offer</h2>
+    <p class="text-lg text-gray-700 mb-4">Get a free upgrade when you book via your mobile device!</p>
+    <img src="mobile-offer.png" alt="Mobile Exclusive Offer" class="mx-auto rounded-lg shadow-md">
   </section>
 
-  <!-- Pricing Section  -->
-  <section id="pricing">
-    <div class="container">
-      <h2>Pricing & Offers</h2>
-      <p>Explore our competitive daily, weekly, and monthly rates. Special discounts for long-term rentals.</p>
-      <ul>
-        <li>Economy Cars: Starting at $29/day</li>
-        <li>SUVs: Starting at $49/day</li>
-        <li>Luxury Cars: Starting at $89/day</li>
-      </ul>
-
-      <!-- Pricing Calculator -->
-      <div id="pricing-calculator">
-        <h3>Pricing Calculator</h3>
-        <form id="calculator-form">
-          <div class="calc-group">
-            <label for="duration">Duration:</label>
-            <input type="number" id="duration" name="duration" placeholder="Enter quantity" min="1" required>
-            <select id="duration-type">
-              <option value="day">Day(s)</option>
-              <option value="week">Week(s)</option>
-              <option value="month">Month(s)</option>
-              <option value="year">Year(s)</option>
-            </select>
-          </div>
-          <div class="calc-group">
-            <label for="car-type">Car Type:</label>
-            <select id="car-type">
-              <option value="economy">Economy Car</option>
-              <option value="suv">SUV</option>
-              <option value="luxury">Luxury Car</option>
-            </select>
-          </div>
-          <button type="submit">Calculate Price</button>
-        </form>
-        <p id="price-result"></p>
-      </div>
+  <!-- Pricing Section -->
+  <section id="pricing" class="container mx-auto py-12 bg-white rounded-lg shadow-md text-center">
+    <h2 class="text-3xl font-bold mb-4">Pricing & Offers</h2>
+    <p class="text-lg text-gray-700 mb-6">Explore our competitive daily, weekly, and monthly rates. Special discounts for long-term rentals.</p>
+    <ul class="text-lg font-semibold mb-6">
+      <li>Economy Cars: Starting at $29/day</li>
+      <li>SUVs: Starting at $49/day</li>
+      <li>Luxury Cars: Starting at $89/day</li>
+    </ul>
+    
+    <!-- Pricing Calculator -->
+    <div id="pricing-calculator" class="bg-gray-100 p-6 rounded-lg shadow-md max-w-lg mx-auto">
+      <h3 class="text-2xl font-bold text-blue-900 mb-4 text-center">Pricing Calculator</h3>
+      <form id="calculator-form" class="space-y-4">
+        <div class="flex flex-col">
+          <label for="duration" class="font-semibold">Duration:</label>
+          <input type="number" id="duration" name="duration" placeholder="Enter quantity" min="1" required class="p-2 border border-gray-300 rounded-md w-full">
+          <select id="duration-type" class="mt-2 p-2 border border-gray-300 rounded-md w-full">
+            <option value="day">Day(s)</option>
+            <option value="week">Week(s)</option>
+            <option value="month">Month(s)</option>
+            <option value="year">Year(s)</option>
+          </select>
+        </div>
+        <div class="flex flex-col">
+          <label for="car-type" class="font-semibold">Car Type:</label>
+          <select id="car-type" class="p-2 border border-gray-300 rounded-md w-full">
+            <option value="economy">Economy Car</option>
+            <option value="suv">SUV</option>
+            <option value="luxury">Luxury Car</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg shadow-md transition duration-300 hover:bg-blue-700">Calculate Price</button>
+      </form>
+      <p id="price-result" class="text-lg font-semibold text-center mt-4 text-gray-900"></p>
     </div>
   </section>
+</body>
+</html>
+
 
   <!-- Contact Us Section -->
   <section id="contact" class="container mx-auto py-12 bg-white rounded-lg shadow-md text-center">

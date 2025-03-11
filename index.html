@@ -6,32 +6,27 @@
   <title>Elite Auto Rentals</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-sans text-gray-900 bg-gray-100 leading-relaxed">
+<body class="bg-gray-100 text-gray-900">
   <!-- Navigation -->
-  <header class="bg-blue-900 p-4 shadow-md">
+  <header class="bg-blue-900 py-4">
     <nav class="container mx-auto flex justify-center">
-      <ul class="flex flex-wrap justify-center gap-4">
-        <li><a href="#hero" class="px-6 py-4 bg-white text-blue-900 text-sm font-bold uppercase rounded-full shadow-md tracking-wide transition-all duration-500 hover:tracking-wider hover:bg-purple-600 hover:text-white hover:shadow-xl active:translate-y-2">Home</a></li>
-        <li><a href="#about" class="px-6 py-4 bg-white text-blue-900 text-sm font-bold uppercase rounded-full shadow-md tracking-wide transition-all duration-500 hover:tracking-wider hover:bg-purple-600 hover:text-white hover:shadow-xl active:translate-y-2">About Us</a></li>
-        <li><a href="#fleet" class="px-6 py-4 bg-white text-blue-900 text-sm font-bold uppercase rounded-full shadow-md tracking-wide transition-all duration-500 hover:tracking-wider hover:bg-purple-600 hover:text-white hover:shadow-xl active:translate-y-2">Fleet</a></li>
-        <li><a href="#pricing" class="px-6 py-4 bg-white text-blue-900 text-sm font-bold uppercase rounded-full shadow-md tracking-wide transition-all duration-500 hover:tracking-wider hover:bg-purple-600 hover:text-white hover:shadow-xl active:translate-y-2">Pricing</a></li>
-        <li><a href="#contact" class="px-6 py-4 bg-white text-blue-900 text-sm font-bold uppercase rounded-full shadow-md tracking-wide transition-all duration-500 hover:tracking-wider hover:bg-purple-600 hover:text-white hover:shadow-xl active:translate-y-2">Contact</a></li>
+      <ul class="flex space-x-4">
+        <li><a href="#hero" class="px-6 py-4 bg-white text-blue-900 text-sm font-bold uppercase rounded-full shadow-md transition-all duration-500 hover:tracking-widest hover:bg-purple-600 hover:text-white hover:shadow-lg">Home</a></li>
+        <li><a href="#about" class="px-6 py-4 bg-white text-blue-900 text-sm font-bold uppercase rounded-full shadow-md transition-all duration-500 hover:tracking-widest hover:bg-purple-600 hover:text-white hover:shadow-lg">About Us</a></li>
+        <li><a href="#fleet" class="px-6 py-4 bg-white text-blue-900 text-sm font-bold uppercase rounded-full shadow-md transition-all duration-500 hover:tracking-widest hover:bg-purple-600 hover:text-white hover:shadow-lg">Fleet</a></li>
+        <li><a href="#pricing" class="px-6 py-4 bg-white text-blue-900 text-sm font-bold uppercase rounded-full shadow-md transition-all duration-500 hover:tracking-widest hover:bg-purple-600 hover:text-white hover:shadow-lg">Pricing</a></li>
+        <li><a href="#contact" class="px-6 py-4 bg-white text-blue-900 text-sm font-bold uppercase rounded-full shadow-md transition-all duration-500 hover:tracking-widest hover:bg-purple-600 hover:text-white hover:shadow-lg">Contact</a></li>
       </ul>
     </nav>
   </header>
-</body>
-</html>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="container">
-      <h1>Elite Auto Rentals</h1>
-      <p>Drive the car of your dreams today. Hassle-free bookings, premium service.</p>
-      <button onclick="window.location.href='#fleet'">
-        <span class="transition"></span>
-        <span class="gradient"></span>
-        <span class="label">Book Now</span>
-      </button>
+
+   <!-- Hero Section -->
+  <section id="hero" class="bg-[url('hero-car.jpg')] bg-cover bg-center text-black py-16 text-center">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold mb-4">Drive Your Dream Car</h1>
+      <p class="text-lg mb-6">Hassle-free bookings, premium service.</p>
+      <button onclick="window.location.href='#fleet'" class="px-6 py-3 bg-blue-600 text-white rounded-md shadow-md hover:bg-blue-700">Book Now</button>
     </div>
   </section>
 
@@ -41,39 +36,31 @@
   </div>
 
   <!-- About Us Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About Elite Auto Rentals</h2>
-      <p>
-        At Elite Auto Rentals, we pride ourselves on providing top-quality vehicles and exceptional service.
-        Whether you're traveling for business or leisure, our fleet of cars is tailored to suit every need.
-      </p>
-    </div>
+  <section id="about" class="container mx-auto py-12 bg-white rounded-lg shadow-md text-center">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">About Elite Auto Rentals</h2>
+    <p class="text-lg text-gray-700">We provide top-quality vehicles and exceptional service, whether you're traveling for business or leisure.</p>
   </section>
 
   <!-- Fleet Options Section -->
-  <section id="fleet">
-    <div class="container">
-      <h2>Our Fleet</h2>
-      <div class="fleet-card">
-        <img src="economy.jpg" alt="Economy Car">
-        <h3>Economy Cars</h3>
-        <p>Affordable and fuel-efficient vehicles for everyday use.</p>
-      </div>
-      <div class="fleet-card">
-        <img src="suv.jpg" alt="SUV">
-        <h3>SUVs</h3>
-        <p>Spacious and versatile, perfect for family trips and off-road adventures.</p>
-      </div>
-      <div class="fleet-card">
-        <img src="luxury.jpg" alt="Luxury Car">
-        <h3>Luxury Cars</h3>
-        <p>Experience luxury and performance with our premium selection.</p>
-      </div>
+  <section id="fleet" class="container mx-auto py-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+    <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md">
+      <img src="economy.jpg" alt="Economy Car" class="w-full h-48 object-cover rounded-lg mb-4">
+      <h3 class="text-2xl font-semibold mb-2">Economy Cars</h3>
+      <p class="text-gray-700">Affordable and fuel-efficient vehicles for everyday use.</p>
+    </div>
+    <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md">
+      <img src="suv.jpg" alt="SUV" class="w-full h-48 object-cover rounded-lg mb-4">
+      <h3 class="text-2xl font-semibold mb-2">SUVs</h3>
+      <p class="text-gray-700">Spacious and versatile, perfect for family trips and off-road adventures.</p>
+    </div>
+    <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md">
+      <img src="luxury.jpg" alt="Luxury Car" class="w-full h-48 object-cover rounded-lg mb-4">
+      <h3 class="text-2xl font-semibold mb-2">Luxury Cars</h3>
+      <p class="text-gray-700">Experience luxury and performance with our premium selection.</p>
     </div>
   </section>
 
-  <!-- Mobile-Only Section -->
+  <!-- Mobile-Only Section #2 -->
   <section id="mobile-exclusive" class="mobile-only">
     <div class="container">
       <h2>Mobile Exclusive Offer</h2>
@@ -82,7 +69,7 @@
     </div>
   </section>
 
-  <!-- Pricing Section -->
+  <!-- Pricing Section  -->
   <section id="pricing">
     <div class="container">
       <h2>Pricing & Offers</h2>
@@ -123,43 +110,35 @@
   </section>
 
   <!-- Contact Us Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Have questions or need assistance? Get in touch:</p>
-      <p>Email: book@eliteautorentals.com</p>
-      <p>Phone: 022 22 22 22</p>
-      <p>Ready to hit the road? Reserve your car today and experience a seamless booking process.</p>
-      <!-- Booking Form -->
-      <form action="/submit-booking" method="POST">
-        <div class="coolinput">
-          <label for="name" class="text">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" class="input">
-        </div>
-        <div class="coolinput">
-          <label for="email" class="text">Email:</label>
-          <input type="text" id="email" name="email" placeholder="Enter your email" class="input">
-        </div>
-        <div class="coolinput">
-          <label for="car-type" class="text">Car Type:</label>
-          <input type="text" id="car-type" name="car-type" placeholder="Specify car type" class="input">
-        </div>
-        <button type="submit" class="button">
-          <span class="button-decor"></span>
-          <span class="button-content">
-            <span class="button__icon">✅</span>
-            <span class="button__text">Submit Booking</span>
-          </span>
-        </button>
-      </form>
-    </div>
+  <section id="contact" class="container mx-auto py-12 bg-white rounded-lg shadow-md text-center">
+    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+    <p class="text-lg text-gray-700 mb-4">Have questions or need assistance? Get in touch:</p>
+    <p class="text-lg font-semibold">Email: <a href="mailto:book@eliteautorentals.com" class="text-blue-600 hover:underline">book@eliteautorentals.com</a></p>
+    <p class="text-lg font-semibold mb-6">Phone: <a href="tel:022222222" class="text-blue-600 hover:underline">022 22 22 22</a></p>
+    <form action="/submit-booking" method="POST" class="bg-gray-100 p-6 rounded-lg shadow-md max-w-lg mx-auto">
+      <div class="mb-4 text-left">
+        <label for="name" class="font-semibold">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full p-2 border border-gray-300 rounded-md">
+      </div>
+      <div class="mb-4 text-left">
+        <label for="email" class="font-semibold">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full p-2 border border-gray-300 rounded-md">
+      </div>
+      <div class="mb-4 text-left">
+        <label for="car-type" class="font-semibold">Car Type:</label>
+        <input type="text" id="car-type" name="car-type" placeholder="Specify car type" class="w-full p-2 border border-gray-300 rounded-md">
+      </div>
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg shadow-md transition duration-300 hover:bg-blue-700">Submit Booking</button>
+    </form>
   </section>
 
   <!-- Mascot: Friendly Auto Assistant -->
-  <div id="mascot" class="mascot">
-    <img src="mascot.png" alt="Friendly Auto Mascot">
-    <div class="mascot-message">Hi there! Need help booking your ride?</div>
+  <div id="mascot" class="fixed bottom-10 right-10 hidden md:block">
+    <img src="mascot.png" alt="Friendly Auto Mascot" class="w-24 h-24">
+    <div class="bg-black text-white text-xs p-2 rounded-md absolute bottom-28 right-0 opacity-0 transition-opacity duration-300 hover:opacity-100">Hi there! Need help booking your ride?</div>
   </div>
+</body>
+</html>
 
   <!-- Pricing Calculator Script -->
   <script>

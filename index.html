@@ -49,38 +49,45 @@
     </style>
   </head>
   
-<body class="font-sans text-gray-900 bg-gray-100 leading-relaxed">
-  <!-- Navigation -->
-  <header class="bg-blue-900 py-4 fixed top-0 left-0 right-0 z-50 shadow-md">
-    <div class="container mx-auto flex justify-between items-center px-6">
-      <h1 class="text-white text-2xl font-bold">Elite Auto Rentals</h1>
-      <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">☰</button>
-      <nav id="mobile-menu" class="fixed top-0 left-0 w-64 h-full bg-blue-900 text-white transform -translate-x-full transition-transform duration-300 md:static md:translate-x-0 md:w-auto md:h-auto">
-        <button id="close-menu" class="absolute top-4 right-4 text-white text-2xl md:hidden">✖</button>
-        <ul class="flex flex-col md:flex-row md:space-x-4 pt-20 md:pt-0">
-          <li><a href="#hero" class="block px-6 py-4 text-sm font-bold uppercase hover:bg-purple-600 hover:text-white">Home</a></li>
-          <li><a href="#about" class="block px-6 py-4 text-sm font-bold uppercase hover:bg-purple-600 hover:text-white">About Us</a></li>
-          <li><a href="#fleet" class="block px-6 py-4 text-sm font-bold uppercase hover:bg-purple-600 hover:text-white">Fleet</a></li>
-          <li><a href="#pricing" class="block px-6 py-4 text-sm font-bold uppercase hover:bg-purple-600 hover:text-white">Pricing</a></li>
-          <li><a href="#contact" class="block px-6 py-4 text-sm font-bold uppercase hover:bg-purple-600 hover:text-white">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<!-- Navigation -->
+<header class="bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 py-4 fixed top-0 left-0 right-0 z-50 shadow-md">
+  <div class="container mx-auto flex justify-between items-center px-6">
+    <h1 class="text-white text-2xl font-bold">Elite Auto Rentals</h1>
+    <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">☰</button>
+    <nav id="mobile-menu" class="fixed top-0 left-0 w-64 h-full bg-blue-900 text-white transform -translate-x-full transition-transform duration-300 md:hidden">
+      <button id="close-menu" class="absolute top-4 right-4 text-white text-2xl">✖</button>
+      <ul class="flex flex-col pt-20">
+        <li><a href="#hero" class="block px-6 py-4 text-sm font-bold uppercase hover:text-yellow-300 transition-all duration-300">Home</a></li>
+        <li><a href="#about" class="block px-6 py-4 text-sm font-bold uppercase hover:text-yellow-300 transition-all duration-300">About Us</a></li>
+        <li><a href="#fleet" class="block px-6 py-4 text-sm font-bold uppercase hover:text-yellow-300 transition-all duration-300">Fleet</a></li>
+        <li><a href="#pricing" class="block px-6 py-4 text-sm font-bold uppercase hover:text-yellow-300 transition-all duration-300">Pricing</a></li>
+        <li><a href="#contact" class="block px-6 py-4 text-sm font-bold uppercase hover:text-yellow-300 transition-all duration-300">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Desktop Navigation with Styled Buttons -->
+    <nav class="hidden md:flex space-x-4">
+      <a href="#hero" class="bg-white text-blue-900 px-4 py-2 rounded-full shadow-lg hover:scale-110 transition-all duration-300">Home</a>
+      <a href="#about" class="bg-white text-blue-900 px-4 py-2 rounded-full shadow-lg hover:scale-110 transition-all duration-300">About Us</a>
+      <a href="#fleet" class="bg-white text-blue-900 px-4 py-2 rounded-full shadow-lg hover:scale-110 transition-all duration-300">Fleet</a>
+      <a href="#pricing" class="bg-white text-blue-900 px-4 py-2 rounded-full shadow-lg hover:scale-110 transition-all duration-300">Pricing</a>
+      <a href="#contact" class="bg-white text-blue-900 px-4 py-2 rounded-full shadow-lg hover:scale-110 transition-all duration-300">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const closeMenu = document.getElementById('close-menu');
-    
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('-translate-x-full');
-    });
-    
-    closeMenu.addEventListener('click', () => {
-      mobileMenu.classList.add('-translate-x-full');
-    });
-  </script>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const closeMenu = document.getElementById('close-menu');
+  
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('-translate-x-full');
+  });
+  
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.add('-translate-x-full');
+  });
+</script>
 
    <!-- Hero Section -->
   <section id="hero" class="bg-[url('hero-car.jpg')] bg-cover bg-center text-white py-32 text-center">
@@ -103,30 +110,33 @@
   </section>
 
   <!-- Fleet Options Section -->
-  <section id="fleet" class="container mx-auto py-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-    <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md relative">
-      <div class="image-wrapper">
-        <img src="economy.jpg" alt="Economy Car" class="fleet-card-front rounded-lg">
-        <img src="economy-interior.jpg" alt="Economy Car Back" class="fleet-card-back rounded-lg">
+  <section id="fleet" class="container mx-auto py-12 text-center">
+    <h2 class="text-4xl font-bold mb-6 text-gray-900">Our Fleets</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md relative">
+        <div class="image-wrapper">
+          <img src="economy.jpg" alt="Economy Car" class="fleet-card-front rounded-lg">
+          <img src="economy-interior.jpg" alt="Economy Car Back" class="fleet-card-back rounded-lg">
+        </div>
+        <h3 class="text-2xl font-semibold mt-4 text-gray-900">Economy Cars</h3>
+        <p class="text-gray-700">Affordable and fuel-efficient vehicles for everyday use.</p>
       </div>
-      <h3 class="text-2xl font-semibold mt-4 text-gray-900">Economy Cars</h3>
-      <p class="text-gray-700">Affordable and fuel-efficient vehicles for everyday use.</p>
-    </div>
-    <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md relative">
-      <div class="image-wrapper">
-        <img src="suv.jpg" alt="SUV" class="fleet-card-front rounded-lg">
-        <img src="suv-interior.jpg" alt="SUV Back" class="fleet-card-back rounded-lg">
+      <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md relative">
+        <div class="image-wrapper">
+          <img src="suv.jpg" alt="SUV" class="fleet-card-front rounded-lg">
+          <img src="suv-interior.jpg" alt="SUV Back" class="fleet-card-back rounded-lg">
+        </div>
+        <h3 class="text-2xl font-semibold mt-4 text-gray-900">SUVs</h3>
+        <p class="text-gray-700">Spacious and versatile, perfect for family trips and off-road adventures.</p>
       </div>
-      <h3 class="text-2xl font-semibold mt-4 text-gray-900">SUVs</h3>
-      <p class="text-gray-700">Spacious and versatile, perfect for family trips and off-road adventures.</p>
-    </div>
-    <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md relative">
-      <div class="image-wrapper">
-        <img src="luxury.jpg" alt="Luxury Car" class="fleet-card-front rounded-lg">
-        <img src="luxury-interior.jpg" alt="Luxury Car Back" class="fleet-card-back rounded-lg">
+      <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md relative">
+        <div class="image-wrapper">
+          <img src="luxury.jpg" alt="Luxury Car" class="fleet-card-front rounded-lg">
+          <img src="luxury-interior.jpg" alt="Luxury Car Back" class="fleet-card-back rounded-lg">
+        </div>
+        <h3 class="text-2xl font-semibold mt-4 text-gray-900">Luxury Cars</h3>
+        <p class="text-gray-700">Experience luxury and performance with our premium selection.</p>
       </div>
-      <h3 class="text-2xl font-semibold mt-4 text-gray-900">Luxury Cars</h3>
-      <p class="text-gray-700">Experience luxury and performance with our premium selection.</p>
     </div>
   </section>
 
@@ -204,8 +214,8 @@
   <!-- Mascot: Friendly Auto Assistant -->
   <div id="mascot" class="fixed bottom-16 right-6 block animate-bounce z-40">
     <div class="relative group">
-      <img src="mascot.png" alt="Friendly Auto Mascot" class="w-20 h-20">
-      <div class="bg-black text-white text-xs p-2 rounded-md absolute bottom-28 right-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">Hi there! Need help booking your ride?</div>
+      <img src="mascot.png" alt="Friendly Auto Mascot" class="w-40 h-40">
+      <div class="bg-black text-white text-xs p-2 rounded-md absolute bottom-40 right-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">Hi there! Need help booking your ride?</div>
     </div>
   </div>
 

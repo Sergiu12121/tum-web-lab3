@@ -46,6 +46,22 @@
       .fleet-card:hover .fleet-card-back {
         opacity: 1;
       }
+      .fleet-hint {
+        font-size: 0.875rem;
+        color: #555;
+        margin-top: 10px;
+        text-align: center;
+      }
+      @media (min-width: 768px) {
+        .fleet-hint::after {
+          content: "(Hover over the image to see the interior)";
+        }
+      }
+      @media (max-width: 767px) {
+        .fleet-hint::after {
+          content: "(Tap the image to see the interior)";
+        }
+      }
     </style>
   </head>
   
@@ -56,7 +72,7 @@
     <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">☰</button>
     <nav id="mobile-menu" class="fixed top-0 left-0 w-64 h-full bg-blue-900 text-white transform -translate-x-full transition-transform duration-300 md:hidden">
       <button id="close-menu" class="absolute top-4 right-4 text-white text-2xl">✖</button>
-      <ul class="flex flex-col pt-20">
+      <ul class="flex flex-col pt-20 gap-6">
         <li><a href="#hero" class="bg-white text-blue-900 px-4 py-2 rounded-full shadow-lg hover:scale-110 transition-all duration-300">Home</a></li>
         <li><a href="#about" class="bg-white text-blue-900 px-4 py-2 rounded-full shadow-lg hover:scale-110 transition-all duration-300">About Us</a></li>
         <li><a href="#fleet" class="bg-white text-blue-900 px-4 py-2 rounded-full shadow-lg hover:scale-110 transition-all duration-300">Fleet</a></li>
@@ -111,8 +127,8 @@
 
   <!-- Fleet Options Section -->
   <section id="fleet" class="container mx-auto py-12 text-center">
-    <h2 class="text-4xl font-bold mb-6 text-gray-900">Our Fleets </h2>
-    <h2 class="text-xl mb-6 text-gray-900">(hover/click the images to see the interior)</h2>
+    <h2 class="text-4xl font-bold mb-6 text-gray-900">Our Fleets</h2>
+    <p class="fleet-hint"></p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md relative">
         <div class="image-wrapper">
@@ -140,6 +156,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- Mobile-Only Section #2 -->
   <section id="mobile-exclusive" class="container mx-auto py-12 bg-white rounded-lg shadow-md text-center block md:hidden">

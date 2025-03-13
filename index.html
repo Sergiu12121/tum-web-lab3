@@ -57,11 +57,11 @@
     <nav id="mobile-menu" class="fixed top-0 left-0 w-64 h-full bg-blue-900 text-white transform -translate-x-full transition-transform duration-300 md:hidden">
       <button id="close-menu" class="absolute top-4 right-4 text-white text-2xl">✖</button>
       <ul class="flex flex-col pt-20">
-        <li><a href="#hero" class="block px-6 py-4 text-sm font-bold uppercase hover:text-yellow-300 transition-all duration-300">Home</a></li>
-        <li><a href="#about" class="block px-6 py-4 text-sm font-bold uppercase hover:text-yellow-300 transition-all duration-300">About Us</a></li>
-        <li><a href="#fleet" class="block px-6 py-4 text-sm font-bold uppercase hover:text-yellow-300 transition-all duration-300">Fleet</a></li>
-        <li><a href="#pricing" class="block px-6 py-4 text-sm font-bold uppercase hover:text-yellow-300 transition-all duration-300">Pricing</a></li>
-        <li><a href="#contact" class="block px-6 py-4 text-sm font-bold uppercase hover:text-yellow-300 transition-all duration-300">Contact</a></li>
+        <li><a href="#hero" class="bg-white text-blue-900 px-4 py-2 rounded-full shadow-lg hover:scale-110 transition-all duration-300">Home</a></li>
+        <li><a href="#about" class="bg-white text-blue-900 px-4 py-2 rounded-full shadow-lg hover:scale-110 transition-all duration-300">About Us</a></li>
+        <li><a href="#fleet" class="bg-white text-blue-900 px-4 py-2 rounded-full shadow-lg hover:scale-110 transition-all duration-300">Fleet</a></li>
+        <li><a href="#pricing" class="bg-white text-blue-900 px-4 py-2 rounded-full shadow-lg hover:scale-110 transition-all duration-300">Pricing</a></li>
+        <li><a href="#contact" class="bg-white text-blue-900 px-4 py-2 rounded-full shadow-lg hover:scale-110 transition-all duration-300">Contact</a></li>
       </ul>
     </nav>
     <!-- Desktop Navigation with Styled Buttons -->
@@ -111,7 +111,8 @@
 
   <!-- Fleet Options Section -->
   <section id="fleet" class="container mx-auto py-12 text-center">
-    <h2 class="text-4xl font-bold mb-6 text-gray-900">Our Fleets</h2>
+    <h2 class="text-4xl font-bold mb-6 text-gray-900">Our Fleets </h2>
+    <h2 class="text-xl mb-6 text-gray-900">(hover/click the images to see the interior)</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md relative">
         <div class="image-wrapper">
@@ -212,10 +213,10 @@
   </section>
 
   <!-- Mascot: Friendly Auto Assistant -->
-  <div id="mascot" class="fixed bottom-16 right-6 block animate-bounce z-40">
+  <div id="mascot" class="fixed bottom-16 right-6 md:w-40 md:h-40 w-20 h-20 animate-bounce z-40">
     <div class="relative group">
-      <img src="mascot.png" alt="Friendly Auto Mascot" class="w-40 h-40">
-      <div class="bg-black text-white text-xs p-2 rounded-md absolute bottom-40 right-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">Hi there! Need help booking your ride?</div>
+      <img src="mascot.png" alt="Friendly Auto Mascot" class="w-full h-full">
+      <div class="bg-black text-white text-xs p-2 rounded-md absolute bottom-28 right-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">Hi there! Need help booking your ride?</div>
     </div>
   </div>
 

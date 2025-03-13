@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elite Auto Rentals</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-      40% { transform: translateY(-10px); }
-      60% { transform: translateY(-5px); }
-    }
-  </style>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Auto Rentals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+        40% { transform: translateY(-10px); }
+        60% { transform: translateY(-5px); }
+      }
+      .fleet-card {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .fleet-card .image-wrapper {
+        position: relative;
+        width: 100%;
+        height: 200px;
+      }
+      .fleet-card img {
+        transition: opacity 0.6s ease-in-out;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .fleet-card-front {
+        z-index: 2;
+      }
+      .fleet-card-back {
+        z-index: 1;
+        opacity: 0;
+      }
+      .fleet-card:hover .fleet-card-front {
+        opacity: 0;
+      }
+      .fleet-card:hover .fleet-card-back {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  
 <body class="font-sans text-gray-900 bg-gray-100 leading-relaxed">
   <!-- Navigation -->
   <header class="bg-blue-900 py-4 fixed top-0 left-0 right-0 z-50 shadow-md">
@@ -68,19 +104,28 @@
 
   <!-- Fleet Options Section -->
   <section id="fleet" class="container mx-auto py-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-    <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md">
-      <img src="economy.jpg" alt="Economy Car" class="w-full h-48 object-cover rounded-lg mb-4">
-      <h3 class="text-2xl font-semibold mb-2">Economy Cars</h3>
+    <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md relative">
+      <div class="image-wrapper">
+        <img src="economy.jpg" alt="Economy Car" class="fleet-card-front rounded-lg">
+        <img src="economy-interior.jpg" alt="Economy Car Back" class="fleet-card-back rounded-lg">
+      </div>
+      <h3 class="text-2xl font-semibold mt-4 text-gray-900">Economy Cars</h3>
       <p class="text-gray-700">Affordable and fuel-efficient vehicles for everyday use.</p>
     </div>
-    <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md">
-      <img src="suv.jpg" alt="SUV" class="w-full h-48 object-cover rounded-lg mb-4">
-      <h3 class="text-2xl font-semibold mb-2">SUVs</h3>
+    <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md relative">
+      <div class="image-wrapper">
+        <img src="suv.jpg" alt="SUV" class="fleet-card-front rounded-lg">
+        <img src="suv-interior.jpg" alt="SUV Back" class="fleet-card-back rounded-lg">
+      </div>
+      <h3 class="text-2xl font-semibold mt-4 text-gray-900">SUVs</h3>
       <p class="text-gray-700">Spacious and versatile, perfect for family trips and off-road adventures.</p>
     </div>
-    <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md">
-      <img src="luxury.jpg" alt="Luxury Car" class="w-full h-48 object-cover rounded-lg mb-4">
-      <h3 class="text-2xl font-semibold mb-2">Luxury Cars</h3>
+    <div class="fleet-card bg-gray-100 p-6 rounded-lg shadow-md relative">
+      <div class="image-wrapper">
+        <img src="luxury.jpg" alt="Luxury Car" class="fleet-card-front rounded-lg">
+        <img src="luxury-interior.jpg" alt="Luxury Car Back" class="fleet-card-back rounded-lg">
+      </div>
+      <h3 class="text-2xl font-semibold mt-4 text-gray-900">Luxury Cars</h3>
       <p class="text-gray-700">Experience luxury and performance with our premium selection.</p>
     </div>
   </section>
